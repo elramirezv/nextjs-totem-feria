@@ -1,0 +1,50 @@
+.custom-dialog {
+  min-width: 80%;
+  top:20%;}
+
+.video-player {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.map-image {
+  max-width: 90%;
+  min-width: 90%;
+  margin-left: 5%;
+  margin-top: 1em;
+}
+
+.nice-button {
+  margin-left: 10%;
+  margin-top: 1em;
+}
+
+.name-tag {
+  margin-left: 18%;
+  padding-left: 5em;
+  padding-top: 4em;
+}
+
+.name-tag h1 {
+  font-size: 50px;
+}
+
+.company-description {
+  margin-left: 10%;
+  margin-top: 1em;
+}
+
+.profile-logo {
+  margin-top: 1em;
+  margin-left: 4%;
+  max-width: 30%;
+  float: left;
+}
+
+.back-button {
+  display: center;
+  width: 80px;
+  height: 80px;
+  margin-left: 10em;
+  margin-top: 5em;
+}

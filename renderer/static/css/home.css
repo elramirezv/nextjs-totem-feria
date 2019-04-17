@@ -1,0 +1,28 @@
+.card-button {
+  margin: none;
+  padding: none;
+  border: none;
+  background: none;
+}
+
+.card-body {
+  display: center;
+  width: 13rem;
+  height: 13rem;
+}
+
+.card:active {
+  box-shadow: 0px 0px #717a33;
+  background-color: grey;
+  top: 5px;
+}
+
+.card {
+  border-radius: 50%;
+  border-color: black;
+}
+
+.col {
+  padding: 0px;
+
+}

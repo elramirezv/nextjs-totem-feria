@@ -1,0 +1,69 @@
+@import './home.css';
+@import './profile.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.logo-holder {
+  align-items: center;
+  background-color: white;
+  margin-top: 30px;
+
+}
+
+.home-button {
+  float: right;
+}
+
+.logo {
+  max-width:155px;
+  max-height: 1;
+  min-width: 155px;
+
+}
+
+.space{
+  margin: 5%;
+
+}
+
+.black-text{
+  font-size: 60px;
+  display: center;
+  padding-top: 25%;
+  color: black;
+}
+
+.white-text{
+  max-width: 12rem;
+  padding-top: 5%;
+  padding-left: 10%;
+  color: black;
+  display: center;
+}
