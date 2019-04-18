@@ -1,35 +1,37 @@
 import React, { Component } from 'react';
-import CategoryComponent from "./category";
-import BottomButtons from "./menu-buttons";
+import CompanyComponent from "./company";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import Fade from 'react-reveal/Fade';
+import BottomButtons from "./menu-buttons";
 import NavbarComponent from "./navbar";
 
 const spaceStyle = {
   margin: "5%"
 }
 
-class CategoriesContainer extends Component {
+class CompaniesContainer extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-        categories: props.data,
+        companies: props.data,
+        category: props.category
     }
 }
 
   createComponents(){
     let columns=[];
     var counter = -1;
-    this.state.categories.map((category) => {
+    this.state.companies.map((company) => {
       counter+=1;
       if ((counter%3)===0){
         return (
           columns.push(
             <div>
             <Col>
-            <CategoryComponent key={category.name} category={category}/>
+            <CompanyComponent key={company.name} company={company}/>
             </Col>
             <p style={spaceStyle}>
             </p>
@@ -39,7 +41,7 @@ class CategoriesContainer extends Component {
         columns.push(
           <div>
           <Col>
-          <CategoryComponent key={category.name} category={category}/>
+          <CompanyComponent key={company.name} company={company}/>
           </Col>
           </div>
         ))
@@ -50,7 +52,7 @@ class CategoriesContainer extends Component {
   render() {
     return (
       <>
-      <NavbarComponent title={"Categorías"}/>
+      <NavbarComponent title={"Empresas"}/>
       <Fade>
       <div style={spaceStyle}>
       <Row>
@@ -58,10 +60,10 @@ class CategoriesContainer extends Component {
       </Row>
       </div>
       </Fade>
-      <BottomButtons currentPage="home"/>
+      <BottomButtons currentPage="companies" previousPage="home"/>
       </>
     );
   }
 }
 
-export default CategoriesContainer;
+export default CompaniesContainer;

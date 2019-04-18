@@ -4,17 +4,31 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
+const logoHolder = {
+  alignItems: "center",
+  backgroundColor: "white",
+  marginTop: "30px"
+}
+
+const logoStyle = {
+  maxWidth:"155px",
+  maxHeight: "1",
+  minWidth: "155px"
+
+}
+
+
 class LogoSlider extends Component {
 
   loadLogos() {
     return this.props.logos.map((logo) => {
       return (
         <Carousel.Item>
-        <Row className = 'logo-holder'>
-          <Col><Image className="logo" src={'../static/logos/'+logo[0]} rounded /></Col>
-          <Col><Image className="logo" src={'../static/logos/'+logo[1]} rounded /></Col>
-          <Col><Image className="logo" src={'../static/logos/'+logo[2]} rounded /></Col>
-          <Col><Image className="logo" src={'../static/logos/'+logo[3]} rounded /></Col>
+        <Row style = {logoHolder}>
+          <Col><Image style={logoStyle} src={'../static/logos/'+logo[0]} rounded /></Col>
+          <Col><Image style={logoStyle} src={'../static/logos/'+logo[1]} rounded /></Col>
+          <Col><Image style={logoStyle} src={'../static/logos/'+logo[2]} rounded /></Col>
+          <Col><Image style={logoStyle} src={'../static/logos/'+logo[3]} rounded /></Col>
         </Row>
         </Carousel.Item>
       )
